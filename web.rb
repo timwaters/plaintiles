@@ -11,7 +11,8 @@ get '/' do
 
 get '/:hex/*' do
  params[:hex]
- `convert -size 256x256 xc:wheat  meep.png`
- send_file 'meep.png'
+ color = params[:hex].scan(/[\w\s]+/)[0] || wheat
+ `convert -size 256x256 xc:#{color} tile.png`
+ send_file 'tile.png'
  end
 
