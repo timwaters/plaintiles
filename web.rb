@@ -12,12 +12,15 @@ get '/' do
     html_tiles = html_tiles + "#{tile}<img src='/images/tiles/#{tile}'  style='padding:0.1em'>"
   end
 
-  "<h1>Plain Tile Maker</h1>This app will serve simple, plain 256x256 tiles for mapping applications
+  "<h1>Plain Tile Maker</h1>This app will serve simple, plain 256x256 png format tiles for mapping applications
   <h2>Colours</h2>
-  <a href='http://www.imagemagick.org/script/color.php#color_names'>http://www.imagemagick.org/script/color.php#color_names </a>
+  Choose from any of the 675 colours by name in the table here: <a href='http://www.imagemagick.org/script/color.php#color_names'>http://www.imagemagick.org/script/color.php#color_names </a>
   <h2>Usage</h2>
-  http://thisurl.com/colorname/X/Y/Z.png or basically something like: http://example.com/colourname/*
-  <h2>#{tile_count} Tiles made so far:</h2>" + html_tiles
+  <pre><b>http://plaintiles.herokuapp.com/colorname/X/Y/Z.png</b></pre> or even something like: <pre><b>http://plaintiles.herokuapp.com/colourname/* </b></pre> <br />
+  For example try: <a href='http://plaintiles.herokuapp.com/hotpink/1/2/3.png'>http://plaintiles.herokuapp.com/hotpink/1/2/3.png</a>  or <a href='http://plaintiles.herokuapp.com/DodgerBlue/0/0/0.png'>http://plaintiles.herokuapp.com/DodgerBlue/0/0/0.png</a> <br />
+  <h2>Examples</h2>
+  Here's an <a href='http://geocommons.com/maps/180483'>example of the plain tiles being used in GeoCommons.com</a>
+  <h2>#{tile_count} Cached tiles</h2>" + html_tiles
 
 end
 

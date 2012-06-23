@@ -2,7 +2,7 @@ This is a simple sinatra app for making plain one colour tiles for mapping appli
 
 It generates plain colour 256x256 tiles in response to a resquest like http://example.com/red/1/3/4.png
 
-It used imagemagick to generate the colours and so all valid colour names from http://www.imagemagick.org/script/color.php#color_names are valid. For example:
+It used imagemagick to generate the colours and so all valid colour names (675 possible colours) from http://www.imagemagick.org/script/color.php#color_names are valid. For example:
 
 wheat,
 snow4,
@@ -15,7 +15,9 @@ It was developed in response to a GeoCommons user wanting a plain tile backgroud
 
 There is a deployed version of this application at: http://plaintiles.herokuapp.com 
 
-And so a valid tile URL would be http://plaintiles.herokuapp.com/HotPink1/1/1/1.png  
+And so a valid tile URL would be http://plaintiles.herokuapp.com/HotPink1/1/1/1.png
+
+Here's the tiles being used in GeoCommons: http://geocommons.com/maps/180483  
 
 Enjoy!
 
