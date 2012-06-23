@@ -13,4 +13,9 @@ etc
 
 It was developed in response to a GeoCommons user wanting a plain tile backgroud to show their data upon, and as an exercise for me getting to know the Heroku platform - for which this application should work.
 
-There is a deployed version of this application at: 
+There is a deployed version of this application at: http://plaintiles.herokuapp.com 
+
+And so a valid tile URL would be http://plaintiles.herokuapp.com/HotPink1/1/1/1.png  
+
+Enjoy!
+
