@@ -12,8 +12,8 @@ get '/' do
     html_tiles = html_tiles + "#{tile}<img src='/images/tiles/#{tile}'  style='padding:0.1em'>"
   end
 
-  "<h1>Plain Tile Maker</h1>This app will serve simple, plain tiles for mapping applications
-  <h2>Colors</h2>
+  "<h1>Plain Tile Maker</h1>This app will serve simple, plain 256x256 tiles for mapping applications
+  <h2>Colours</h2>
   <a href='http://www.imagemagick.org/script/color.php#color_names'>http://www.imagemagick.org/script/color.php#color_names </a>
   <h2>Usage</h2>
   http://thisurl.com/colorname/X/Y/Z.png or basically something like: http://example.com/colourname/*
